@@ -1,0 +1,42 @@
+# Estrutura do Projeto EzerHub
+# Arquivo placeholder — a pasta execution/ conterá os módulos de infraestrutura
+# Seguindo a arquitetura definida em GEMINI.md (Camada 3 — Execução)
+
+## Estrutura planejada:
+
+# execution/
+# ├── db/
+# │   └── supabase_client.js          → cliente Supabase singleton
+# ├── repositories/
+# │   ├── user_repository.js
+# │   ├── prayer_session_repository.js
+# │   ├── prayer_participant_repository.js
+# │   ├── prayer_request_repository.js
+# │   ├── prayer_reaction_repository.js
+# │   ├── prayer_comment_repository.js
+# │   ├── prayer_circle_repository.js
+# │   ├── circle_member_repository.js
+# │   ├── circle_prayer_log_repository.js
+# │   ├── circle_achievement_repository.js
+# │   ├── faith_event_repository.js
+# │   ├── event_rsvp_repository.js
+# │   ├── invite_repository.js
+# │   ├── follow_repository.js
+# │   ├── user_location_repository.js
+# │   └── church_repository.js
+# ├── notifications/
+# │   ├── push_notification_client.js
+# │   ├── email_client.js
+# │   └── sms_client.js
+# ├── storage/
+# │   ├── avatar_storage.js
+# │   └── image_storage.js
+# ├── geo/
+# │   └── location_service.js         → busca por proximidade
+# ├── auth/
+# │   ├── jwt_service.js
+# │   └── oauth_client.js
+# ├── links/
+# │   └── invite_link_generator.js
+# └── moderation/
+#     └── content_filter.js

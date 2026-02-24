@@ -1,0 +1,46 @@
+# src/ — Frontend EzerHub (React + Vite + TypeScript)
+# Seguindo a arquitetura definida em GEMINI.md
+
+## Estrutura planejada:
+
+# src/
+# ├── main.tsx
+# ├── App.tsx
+# ├── components/
+# │   ├── layout/
+# │   │   ├── Sidebar.tsx
+# │   │   ├── Header.tsx
+# │   │   └── BottomNav.tsx          → mobile
+# │   ├── prayer/
+# │   │   ├── PrayerSessionCard.tsx
+# │   │   ├── PrayerRequestCard.tsx
+# │   │   ├── PrayerCircleCard.tsx
+# │   │   └── PrayingNowButton.tsx
+# │   ├── events/
+# │   │   ├── EventCard.tsx
+# │   │   └── EventMap.tsx
+# │   ├── community/
+# │   │   ├── UserCard.tsx
+# │   │   └── CircleProgressBar.tsx
+# │   └── shared/
+# │       ├── Button.tsx
+# │       ├── Avatar.tsx
+# │       ├── Badge.tsx
+# │       └── Modal.tsx
+# ├── pages/
+# │   ├── Home.tsx
+# │   ├── Pray.tsx
+# │   ├── Events.tsx
+# │   ├── Community.tsx
+# │   └── Profile.tsx
+# ├── hooks/
+# │   ├── useAuth.ts
+# │   ├── usePrayerSessions.ts
+# │   ├── usePrayerCircles.ts
+# │   └── useProximity.ts
+# ├── services/
+# │   └── api.ts                     → cliente HTTP para o backend
+# ├── types/
+# │   └── index.ts                   → tipos TypeScript do domínio
+# └── styles/
+#     └── index.css

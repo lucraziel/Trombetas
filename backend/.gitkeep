@@ -1,0 +1,30 @@
+# Estrutura do Projeto EzerHub
+# Arquivo placeholder — a pasta backend/ conterá os serviços de orquestração
+# Seguindo a arquitetura definida em GEMINI.md (Camada 2 — Orquestração)
+
+## Estrutura planejada:
+
+# backend/
+# ├── server.js              → entry point Express
+# ├── routes/
+# │   ├── auth.routes.js
+# │   ├── prayer_sessions.routes.js
+# │   ├── prayer_requests.routes.js
+# │   ├── prayer_circles.routes.js
+# │   ├── faith_events.routes.js
+# │   ├── invites.routes.js
+# │   └── users.routes.js
+# ├── services/
+# │   ├── prayer_session.service.js
+# │   ├── prayer_request.service.js
+# │   ├── prayer_circle.service.js
+# │   ├── faith_event.service.js
+# │   ├── invite.service.js
+# │   └── user.service.js
+# ├── middleware/
+# │   ├── auth.middleware.js      → validação JWT
+# │   ├── tenant.middleware.js    → isolamento por user_id
+# │   └── rate_limit.middleware.js
+# └── jobs/
+#     ├── prayer_reminder.job.js  → lembretes agendados
+#     └── circle_completion.job.js → encerramento de círculos

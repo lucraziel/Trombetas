@@ -1,0 +1,4 @@
+# Pastas temporárias de processamento
+# Nunca commitar. Sempre regenerável.
+*
+!.gitignore
