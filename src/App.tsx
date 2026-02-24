@@ -12,6 +12,7 @@ import ProfilePage from './pages/Profile'
 import TrophiesPage from './pages/Trophies'
 import SignInPage from './pages/auth/SignInPage'
 import SignUpPage from './pages/auth/SignUpPage'
+import { useProfileSync } from './hooks/useProfileSync'
 
 // ─────────────────────────────────────────────
 // Layout protegido (apenas usuários autenticados)
@@ -20,6 +21,9 @@ function AppShell() {
     const [sidebarOpen, setSidebarOpen] = useState(false)
     const location = useLocation()
     const { user } = useUser()
+
+    // Sincroniza perfil Clerk → Supabase automaticamente
+    useProfileSync()
 
     // Monta o objeto de usuário a partir do Clerk
     const currentUser = user
